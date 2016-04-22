@@ -5,6 +5,7 @@ public class Livro {
 	private String descricao;
 	private double valor;
 	private String isbn;
+	private Autor autor;
 	
 	public Livro(){
 		setNome(null);
@@ -36,4 +37,24 @@ public class Livro {
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
+	public Autor getAutor() {
+		return autor;
+	}
+	public void setAutor(Autor autor) {
+		this.autor = autor;
+	}
+	public void aplicaDesconto(double porcentagem){
+		this.valor -= this.valor*porcentagem;
+	}
+	public boolean isAutor(){
+		return this.autor!=null;
+	}
+	@Override
+	public String toString(){
+		return "Nome: "+getNome()+
+			"\nValor: "+getValor()+
+			"\nISBN: "+getIsbn()+
+			"Descricao:"+getDescricao();
+	}
+	
 }
