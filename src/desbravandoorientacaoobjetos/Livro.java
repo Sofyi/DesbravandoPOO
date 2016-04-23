@@ -7,11 +7,12 @@ public class Livro {
 	private String isbn;
 	private Autor autor;
 	
-	public Livro(){
+	public Livro(Autor autor){
+		setAutor(autor);
 		setNome(null);
-		setDescricao(null);
+		setDescricao(" ");
 		setValor(0);
-		setIsbn(null);
+		setIsbn("000-00-00000-00-0");
 	}
 	public String getNome(){
 		return nome;
@@ -43,8 +44,12 @@ public class Livro {
 	public void setAutor(Autor autor) {
 		this.autor = autor;
 	}
-	public void aplicaDesconto(double porcentagem){
+	public boolean aplicaDesconto(double porcentagem){
+		if(porcentagem>0.3){
+			return false;
+		}
 		this.valor -= this.valor*porcentagem;
+		return true;
 	}
 	public boolean isAutor(){
 		return this.autor!=null;
