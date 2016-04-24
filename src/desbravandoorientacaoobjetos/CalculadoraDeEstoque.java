@@ -5,8 +5,6 @@ public class CalculadoraDeEstoque {
 	public static void main(String[] args) {
 		double soma=0;
 		int cont=0;
-		
-		
 		while(cont<35){
 			double valorDoLivro=59.90;
 			soma +=  valorDoLivro;

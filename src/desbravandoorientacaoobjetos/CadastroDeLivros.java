@@ -9,13 +9,16 @@ public class CadastroDeLivros {
 
 	public static void main(String[] args) {
 		Autor autor = new Autor();
-		Livro livro	 = new Livro(autor);
-		
-		
-		
+
 		inputStr = new Scanner(System.in);
 		input = new Scanner(System.in);
-		
+
+		autor.setNome(inputStr.nextLine());
+		autor.setEmail(inputStr.nextLine());
+		autor.setCpf(inputStr.nextLine());
+
+		Livro livro	 = new Livro(autor);	
+
 		System.out.print("Nome Livro:");
 		livro.setNome(inputStr.nextLine());
 		System.out.print("Descricao: ");
@@ -25,13 +28,9 @@ public class CadastroDeLivros {
 		System.out.println("Cadastro ISBN:");
 		livro.setIsbn(inputStr.nextLine());
 		System.out.println("Desconto de livro em porcentagem");
-		
-		autor.setNome(inputStr.nextLine());
-		autor.setEmail(inputStr.nextLine());
-		autor.setCpf(inputStr.nextLine());
-		livro.setAutor(autor);
-		System.out.println(livro.toString());
-		
-	}
 
+		livro.setAutor(autor);
+
+		System.out.println(livro.toString());
+	}
 }
