@@ -1,11 +1,11 @@
 package desbravandoorientacaoobjetos;
 
-//import java.util.ArrayList;
+import java.util.ArrayList;
 
 public class CarrinhoDeCompras {
 	private double total;
-	//ArrayList<Livro> lista = new ArrayList<Livro>();
-	//public static int cont;
+	ArrayList<Livro> lista = new ArrayList<Livro>();
+	public static int cont;
 	
 	public double getTotal() {
 		return total;
