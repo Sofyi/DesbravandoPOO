@@ -7,9 +7,6 @@ public class CarrinhoDeCompras {
 	public double getTotal() {
 		return total;
 	}
-	public void setTotal(double total) {
-		this.total = total;
-	}
 	
 	public void adiciona(Livro livro){
 		System.out.println("Adicionado: "+livro);
