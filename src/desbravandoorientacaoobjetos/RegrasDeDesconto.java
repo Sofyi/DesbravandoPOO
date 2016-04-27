@@ -5,12 +5,12 @@ public class RegrasDeDesconto {
 		Autor autor = new Autor();
 		autor.setNome("Sofia");
 		
-		Livro livro = new Livro(autor);
+		Livro livro = new LivroFisico(autor);
 		livro.setValor(59.90);
 		
 		System.out.println("Valor atual: "+livro.getValor());
 		System.out.println("\nImpresso");
-		if(!livro.aplicaDesconto(0.3)){
+		if(!livro.aplicaDescontoDe(0.3)){
 			System.out.println("Desconto nao pode ser maior do que 30%");
 		}else{
 			System.out.println("Valor com desconto: R$"+livro.getValor());
@@ -20,10 +20,20 @@ public class RegrasDeDesconto {
 		Ebook ebook = new Ebook(autor);
 		ebook.setValor(29.90);
 		System.out.println("\nEbook");
-		if(!ebook.aplicaDesconto(0.15)){
+		if(!ebook.aplicaDescontoDe(0.15)){
 			System.out.println("Desconto nao pode ser maior que 15%");
 		}else{
 			System.out.println("Valor do Ebook com desconto: R$"+ebook.getValor());
+		}
+		
+				
+		Livro mini = new MiniLivro(autor);
+		mini.setValor(39.90);
+		System.out.println("MiniLivro");
+		if(!mini.aplicaDescontoDe(0.3)){
+			System.out.println("Desconto no livro nao pode ser maior que 30%");
+		}else{
+			System.out.println("Valor do livro dom desconto: "+mini.getValor());
 		}
 	}
 }

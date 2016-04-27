@@ -1,6 +1,6 @@
 package desbravandoorientacaoobjetos;
 
-public class Livro {
+public abstract class Livro {
 	private String nome;
 	private String descricao;
 	private double valor;
@@ -44,14 +44,8 @@ public class Livro {
 	public void setAutor(Autor autor) {
 		this.autor = autor;
 	}
-	public boolean aplicaDesconto(double porcentagem){
-		if(porcentagem>0.3){
-			return false;
-		}
-		this.valor -= this.valor*porcentagem;
-		return true;
-	}
-	public boolean isAutor(){
+	public abstract boolean aplicaDescontoDe(double porcentagem);
+	public boolean hasAutor(){
 		return this.autor!=null;
 	}
 	@Override
@@ -61,5 +55,4 @@ public class Livro {
 			"\nISBN: "+getIsbn()+
 			"Descricao:"+getDescricao();
 	}
-	
 }

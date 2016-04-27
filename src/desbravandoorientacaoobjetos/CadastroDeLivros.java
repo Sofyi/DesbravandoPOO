@@ -17,7 +17,7 @@ public class CadastroDeLivros {
 		autor.setEmail(inputStr.nextLine());
 		autor.setCpf(inputStr.nextLine());
 
-		Livro livro	 = new Livro(autor);	
+		Livro livro	 = new LivroFisico(autor);	
 
 		System.out.print("Nome Livro:");
 		livro.setNome(inputStr.nextLine());
