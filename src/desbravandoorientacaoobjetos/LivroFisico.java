@@ -1,6 +1,6 @@
 package desbravandoorientacaoobjetos;
 
-public class LivroFisico extends Livro{
+public class LivroFisico extends Livro implements Promocional{
 	public LivroFisico(Autor autor){
 		super(autor);
 	}

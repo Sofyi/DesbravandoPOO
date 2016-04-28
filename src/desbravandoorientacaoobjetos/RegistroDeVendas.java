@@ -21,5 +21,4 @@ public class RegistroDeVendas {
 		System.out.println("Total "+ carrinho.getTotal());
 
 	}
-
 }
