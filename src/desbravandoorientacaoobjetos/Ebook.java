@@ -24,5 +24,8 @@ public class Ebook extends Livro{
 		setValor(getValor() - desconto);
 		return true;
 	}
-	
+	@Override
+	public String toString(){
+		return super.toString()+"\nWaterMark: "+getWaterMark();
+	}
 }
