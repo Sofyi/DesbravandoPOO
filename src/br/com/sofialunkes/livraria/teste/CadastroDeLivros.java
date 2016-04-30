@@ -1,6 +1,10 @@
-package desbravandoorientacaoobjetos;
+package br.com.sofialunkes.livraria.teste;
 
 import java.util.Scanner;
+
+import br.com.sofialunkes.livraria.Autor;
+import br.com.sofialunkes.livraria.produtos.Livro;
+import br.com.sofialunkes.livraria.produtos.LivroFisico;
 
 public class CadastroDeLivros {
 

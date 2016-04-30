@@ -1,4 +1,6 @@
-package desbravandoorientacaoobjetos;
+package br.com.sofialunkes.livraria.produtos;
+
+import br.com.sofialunkes.livraria.Autor;
 
 public class Ebook extends Livro implements Promocional{
 	

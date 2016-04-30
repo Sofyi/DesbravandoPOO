@@ -1,6 +1,8 @@
-package desbravandoorientacaoobjetos;
+package br.com.sofialunkes.livraria.teste;
 
 import java.util.ArrayList;
+
+import br.com.sofialunkes.livraria.produtos.*;
 
 public class CarrinhoDeCompras {
 	private double total;
@@ -13,7 +15,6 @@ public class CarrinhoDeCompras {
 	public void setTotal(double total){
 		this.total+=total;
 	}
-
 	public void adiciona(Produto produto){
 		System.out.println("Adicionando\n"+produto);
 		setTotal(produto.getValor());

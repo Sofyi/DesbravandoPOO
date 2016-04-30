@@ -1,4 +1,6 @@
-package desbravandoorientacaoobjetos;
+package br.com.sofialunkes.livraria.produtos;
+
+import br.com.sofialunkes.livraria.Editora;
 
 public class Revista implements Produto, Promocional{
 	private String nome;

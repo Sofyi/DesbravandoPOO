@@ -1,4 +1,6 @@
-package desbravandoorientacaoobjetos;
+package br.com.sofialunkes.livraria.produtos;
+
+import br.com.sofialunkes.livraria.Autor;
 
 public abstract class Livro implements Produto {
 	private String nome;
@@ -52,6 +54,6 @@ public abstract class Livro implements Produto {
 		return "Nome: "+getNome()+
 			"\nValor: "+getValor()+
 			"\nISBN: "+getIsbn()+
-			"Descricao:"+getDescricao();
+			"Descricao:"+getDescricao()+this.hasAutor() != null? autor.toString():"";
 	}
 }

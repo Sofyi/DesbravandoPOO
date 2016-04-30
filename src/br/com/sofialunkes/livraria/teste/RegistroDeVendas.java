@@ -1,4 +1,8 @@
-package desbravandoorientacaoobjetos;
+package br.com.sofialunkes.livraria.teste;
+
+import br.com.sofialunkes.livraria.Autor;
+import br.com.sofialunkes.livraria.produtos.Ebook;
+import br.com.sofialunkes.livraria.produtos.LivroFisico;
 
 public class RegistroDeVendas {
 

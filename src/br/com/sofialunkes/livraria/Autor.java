@@ -1,4 +1,4 @@
-package desbravandoorientacaoobjetos;
+package br.com.sofialunkes.livraria;
 
 public class Autor {
 	private String nome;
