@@ -8,8 +8,11 @@ import br.com.sofialunkes.livraria.produtos.*;
 
 public class CarrinhoDeCompras {
 	private double total;
-	ArrayList<Produto> lista = new ArrayList<Produto>();
-	public static int cont;
+	private Produto[] produtos = new Produto[10];
+	
+	//ArrayList<Produto> lista = new ArrayList<Produto>();
+	//public static int cont;
+	private int contador=0;
 	
 	public double getTotal() {
 		return total;
@@ -19,12 +22,23 @@ public class CarrinhoDeCompras {
 	}
 	public void adiciona(Produto produto){
 		System.out.println("Adicionando\n"+produto);
-		lista.add(produto);
+		//lista.add(produto);
+		this.produtos[contador]=produto;
+		contador++;
 		setTotal(produto.getValor());
 	}
-	public void getProdutos(){
+	/*public void getProdutos(){
 		for(Produto produto : lista){
 			System.out.println(produto.toString());
 		}
 	}
+	*/
+	
+	public Produto[] getProdutos() {
+		return produtos;
+	}
+	public void setProdutos(Produto[] produtos) {
+		this.produtos = produtos;
+	}
+
 }
