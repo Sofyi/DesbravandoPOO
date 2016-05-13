@@ -1,6 +1,7 @@
 package br.com.sofialunkes.livraria.produtos;
 
 import br.com.sofialunkes.livraria.Autor;
+import br.com.sofialunkes.livraria.exception.AutorNuloException;
 
 public abstract class Livro implements Produto {
 	private String nome;
@@ -10,6 +11,10 @@ public abstract class Livro implements Produto {
 	private Autor autor;
 	
 	public Livro(Autor autor){
+		if (autor == null){
+			throw new AutorNuloException(
+					"O Autr do Livro não pode ser nulo");
+		}
 		setAutor(autor);
 		setNome(null);
 		setDescricao(" ");
