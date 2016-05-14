@@ -9,9 +9,11 @@ import br.com.sofialunkes.livraria.produtos.*;
 public class CarrinhoDeCompras {
 	private double total;
 	private Produto[] produtos = new Produto[10];
-	//ArrayList<Produto> lista = new ArrayList<Produto>();
-	//public static int cont;
 	private int contador=0;
+	
+	
+	//ArrayList<Produto> lista = new ArrayList<Produto>();
+		//public static int cont;
 	
 	public double getTotal() {
 		return total;
