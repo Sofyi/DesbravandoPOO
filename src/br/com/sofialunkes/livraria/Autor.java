@@ -27,4 +27,10 @@ public class Autor {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	@Override
+	public boolean equals(Object obj){
+		Autor outro = (Autor)obj;
+		return this.nome.equals(outro.nome);
+	}
 }

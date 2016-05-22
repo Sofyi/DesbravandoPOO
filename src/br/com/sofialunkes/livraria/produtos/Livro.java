@@ -13,7 +13,7 @@ public abstract class Livro implements Produto {
 	public Livro(Autor autor){
 		if (autor == null){
 			throw new AutorNuloException(
-					"O Autr do Livro não pode ser nulo");
+					"O Autor do Livro não pode ser nulo");
 		}
 		setAutor(autor);
 		setNome(null);
